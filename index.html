@@ -5,46 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    
+    <!--align form boxes-->
+    <style>
+        label{
+            display: inline-block;
+            text-align: left;
+            width: 160px;
+        }
+        body {
+            margin-left: 1.5em;
+            font-family:'Times New Roman', Times, serif;
+        } 
+    </style>
 </head>
 <body>
     <h2>Registration Form</h2>
     <br>
     <div>
-        <form action="/process" method="post"">
+        <form action="/process" method="post">
             <!--first name box-->
             <div>
                 <label for="first_name">First Name: <span style="color:red">*</span></label>
-                <input type="text" name="first_name" placeholder="enter first name" required>
+                <input type="text" name="first_name" id="first_name" placeholder="enter first name" required>
             </div>
             <br>
             <!--Last name box-->
             <div>
                 <label for="last_name">Last Name: <span style="color:red">*</span></label>
-                <input type="text" name="last_name" placeholder="enter last name" required>
+                <input type="text" name="last_name" id="last_name" placeholder="enter last name" required>
             </div>
             <br>
             <!--email box-->
             <div>
                 <label for="email">Email Address: <span style="color:red">*</span></label>
-                <input type="email" name="email" placeholder="enter email" required>
+                <input type="email" name="email" id="email" placeholder="enter email" required>
             </div>
             <br>
             <!--password  box-->
             <div>
                 <label for="password">Password: <span style="color:red">*</span></label>
-                <input type="password" name="password" placeholder="enter password" required>
+                <input type="password" name="password" id="password" placeholder="enter password" required>
             </div>
             <br>
             <!--password confirmation box-->
             <div>
                 <label for="password_confirmation"> Confirm Password:<span style="color:red">*</span></label>
-                <input type="password_confirmation" name="password_confirmation" placeholder="confirm password">
+                <input type="password_confirmation" name="password_confirmation" id="password_confirmation" placeholder="confirm password">
             </div>
             <br>
             <!--birthday box-->
             <div>
                 <label for="birthday">Birthday:</label>
-                <input type="date" name="birthday">
+                <input type="date" name="birthday" id="birthday">
             </div>
             <br>
             <!--gender identity box-->
@@ -105,19 +118,5 @@
     </div>
     <p style="font-size: 0.8em"><span class="required" style="color: red">*</span><i> Indicates a required field</i></p>
     <br>
-
-    <!--align form boxes-->
-
-    <style>
-        label{
-            display: inline-block;
-            text-align: left;
-            width: 160px;
-        }
-        body {
-            margin-left: 1.5em;
-            font-family:'Times New Roman', Times, serif;
-        } 
-    </style>
 </body>
 </html>
