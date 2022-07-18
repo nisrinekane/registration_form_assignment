@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <br>
+    <div>
+        <form action="/process" method="post"">
+            <!--first name box-->
+            <div>
+                <label for="first_name">First Name: <span style="color:red">*</span></label>
+                <input type="text" name="first_name" placeholder="enter first name" required>
+            </div>
+            <br>
+            <!--Last name box-->
+            <div>
+                <label for="last_name">Last Name: <span style="color:red">*</span></label>
+                <input type="text" name="last_name" placeholder="enter last name" required>
+            </div>
+            <br>
+            <!--email box-->
+            <div>
+                <label for="email">Email Address: <span style="color:red">*</span></label>
+                <input type="email" name="email" placeholder="enter email" required>
+            </div>
+            <br>
+            <!--password  box-->
+            <div>
+                <label for="password">Password: <span style="color:red">*</span></label>
+                <input type="password" name="password" placeholder="enter password" required>
+            </div>
+            <br>
+            <!--password confirmation box-->
+            <div>
+                <label for="password_confirmation"> Confirm Password:<span style="color:red">*</span></label>
+                <input type="password_confirmation" name="password_confirmation" placeholder="confirm password">
+            </div>
+            <br>
+            <!--birthday box-->
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <!--gender identity box-->
+            <div>
+                <p>Gender Identity:</p>
+                <div>
+                    <input type="radio" name="gender_identity" value="male" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender_identity" value="female" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender_identity" value="non_binary" id="non_binary">
+                    <label for="non_binary">Non-binary</label>
+                </div>
+                <div>
+                    <input type="radio" name="no_answer" value="no_answer" id="no_answer">
+                    <label for="no_answer">I prefer not to answer</label>
+                </div>
+            </div>
+            <br>
+            <!--description box-->
+            <div>
+                <p>A short description about myself:</p>
+                <textarea name="description" id="description" cols="30" rows="5" placeholder="Enter text here..."></textarea>
+            </div>
+            <br>
+            <!--favorite language box-->
+            <div style="width: 20em; white-space: nowrap;">
+                <p style="display: inline-block">Favorite Language: </p>
+                <select style="display: inline-block;" name="favorite_language" id="favorite_language">
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c_plus">C++</option>
+                    <option value="c_sharp">C#</option>
+                    <option value="swift">Swift</option>
+                </select>
+            </div>
+            <!--subscription box-->
+            <br>
+            <br>
+            <div>
+                <input type="checkbox" name="subscription" id="subscription" checked>
+                <label for="subscription" style="width: 500px">Yes, I would like to receive periodic email updates</label>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--button box-->
+            <div>
+                <input type="submit" value="Create Account" style="height:40px; width: 150px; font-size: 1em;color: white; background-color: #24a0ed; border-radius: 5px; border: 1px solid #24a0ed">
+            </div>
+            <br>
+        </form>
+    </div>
+    <p style="font-size: 0.8em"><span class="required" style="color: red">*</span><i> Indicates a required field</i></p>
+    <br>
+
+    <!--align form boxes-->
+
+    <style>
+        label{
+            display: inline-block;
+            text-align: left;
+            width: 160px;
+        }
+        body {
+            margin-left: 1.5em;
+            font-family:'Times New Roman', Times, serif;
+        } 
+    </style>
+</body>
+</html>
